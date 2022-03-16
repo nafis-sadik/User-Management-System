@@ -7,7 +7,7 @@ namespace Services
 {
     public interface IUserService
     {
-        public bool AuthenticateUser(string userName, string password);
+        public string AuthenticateUser(string userName, string password);
         public bool RegisterUser(UserModel userModel);
     }
 }

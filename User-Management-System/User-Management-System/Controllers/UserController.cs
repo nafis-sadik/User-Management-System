@@ -1,6 +1,8 @@
-﻿using Entities;
+﻿using Data.Entities;
+using Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Repositories;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -16,7 +18,7 @@ namespace User_Management_System.Controllers
         private IUserService _userService;
         public UserController()
         {
-            _userService = new UserServices();
+            _userService = new UserServices(new UserRepo(new bottcampdbContext())); ;
         }
         [Route("LogIn")]
         [HttpGet]
@@ -28,7 +30,10 @@ namespace User_Management_System.Controllers
         [HttpPost]
         public IActionResult SignUp(UserModel userModel)
         {
-            return Conflict(_userService.RegisterUser(userModel));
+            if (_userService.RegisterUser(userModel))
+                return Ok();
+            else
+                return Conflict();
         }
     }
 }
