@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "89haJhs7m7VvjsqeUuVSTkqSgU93i6HRUrqlfcZYV3UKfzOuv7CtUmlbcL2dNGDdwytWqcYyi7Val3OOph/PpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Md.Nafis Sadik\\source\\repos\\User-Management-System\\User-Management-System\\DesignPatterns\\DesignPatterns.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Md.Nafis Sadik\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

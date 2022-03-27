@@ -8,6 +8,6 @@ namespace Repositories
     public interface IUserRepo : IRepositoryBase<User> { }
     public class UserRepo : RepositoryBase<User>, IUserRepo
     {
-        public UserRepo(bottcampdbContext context) : base(context) { }
+        public UserRepo(bootcampdb2Context context) : base(context) { }
     }
 }

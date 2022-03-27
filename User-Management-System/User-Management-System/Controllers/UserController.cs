@@ -18,7 +18,7 @@ namespace User_Management_System.Controllers
         private IUserService _userService;
         public UserController()
         {
-            _userService = new UserServices(new UserRepo(new bottcampdbContext())); ;
+            _userService = new UserServices(new UserRepo(new bootcampdb2Context()));
         }
         [Route("LogIn")]
         [HttpGet]

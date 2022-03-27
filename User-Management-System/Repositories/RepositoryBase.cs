@@ -10,10 +10,10 @@ namespace Repositories
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        internal readonly bottcampdbContext Db;
+        internal readonly bootcampdb2Context Db;
         private readonly DbSet<T> _dbSet;
 
-        internal RepositoryBase(bottcampdbContext context)
+        internal RepositoryBase(bootcampdb2Context context)
         {
             Db = context;
             _dbSet = Db.Set<T>();
